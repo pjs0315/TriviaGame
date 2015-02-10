@@ -16,13 +16,16 @@ namespace TriviaGame
         }
 
 
-        //This functions gets the full list of trivia questions from the Trivia.txt document
+        /// <summary>
+        /// This function gets the full list of trivia questions from the Trivia.txt document
+        /// </summary>
+        /// <returns>A list of Trivia objects</returns>
         static List<Trivia> GetTriviaList()
         {
             //Get Contents from the file.  Remove the special char "\r".  Split on each line.  Convert to a list.
             List<string> contents = File.ReadAllText("trivia.txt").Replace("\r", "").Split('\n').ToList();
-
-            //Each item in list "contents" is now one line of the Trivia.txt document.
+            
+            //Each string in the list "contents" is now one line of the Trivia.txt document.
             
             //make a new list to return all trivia questions
             List<Trivia> returnList = new List<Trivia>();
