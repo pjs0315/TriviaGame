@@ -16,3 +16,6 @@ project is to make it an application with different games available. My main goa
 ##Prerequisites
   * Knowledge of c#
   * Knowledge of sqlite is a plus
+
+##Mission Statement
+I enjoy making little games like this. Its a fun hobby and exercises my programming skills. If you also like creating games and want to see where your programming skills are, then feel free to contribute.
