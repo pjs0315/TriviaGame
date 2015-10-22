@@ -19,7 +19,7 @@ project is to make it an application with different games available. My main goa
 ##Prerequisites
   * Knowledge of [C#](https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx)
   * Knowledge of [SQLite](https://www.sqlite.org) is a plus
-  * Use a version of Visual Studio that supports .Net 4.5 Framework
+  * Use a version of Visual Studio that supports .Net 4.5 Framework (currently doing research, may need to change this to 2.0)
 
 ##Installation
 If you don't have Visual Studio installed, then download the free version of visual studio [here](https://www.visualstudio.com/downloads/download-visual-studio-vs) and follow install directions. A microsoft account may be neccesary for set up after the installation has completed.
@@ -32,6 +32,14 @@ Find the project folder, and open the TriviaGame.sln file.
 To view the code, click on the View menu, and then click on Code, or press F7.
 
 To view the designer, click on the View menu and then click on Designer, or press shift+F7
+
+###Run in MonoDevelop
+Note: MonoDevelop support winforms for .Net 2.0
+If you are not using Windows as your OS, then you will want to install [MonoDevelop](http://www.monodevelop.com/download/). It is supported on Linux, Mac OSX, and Windows. Depending on what OS you are using, you will follow different instruction to download and install.
+
+[Mono Documentation](http://www.monodevelop.com/documentation/)
+
+For UI elements, you will want to use [WinForms](http://www.mono-project.com/docs/gui/winforms/)
 
 ##Mission Statement
 A place to make a collection of games. I enjoy making little games like this. Its a fun hobby and exercises my programming skills. I am also learning how to use github for OSS projects. If you also like creating games and want to see where your programming skills are, then feel free to contribute.
