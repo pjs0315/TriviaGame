@@ -1,7 +1,10 @@
 #GameCollectionApp
 The original project was just a c# console  application that took in data from a text file, and made a simple trivia game. 
-I wanted to add a gui component to this project because not much else can be done with a console. My overall intention with this
-project is to make it an application with different games available. My main goal first is to add a gui counterpart to this game. Part of that process will include creating different trivia formats. For example, if the user wants to play a trivia game, they will have the option of choosing between a jeopardy style game, a memory style game, or a timed version. Other goals for this application are to create other games as part of this application. Using .Net Framework 4.5.
+I am changing this to a collection of gui games. The user will be able to choose from different trivia formats or choose other classic games to play. Using .Net Framework 4.5. Platform is limited to Windows.
+
+##Mission Statement
+A place to make a collection of games. I enjoy making little games like this. Its a fun hobby and exercises my programming skills. I am also learning how to use github for OSS projects. If you also like creating games and want to see where your programming skills are, then feel free to contribute.
+
 ##Ways To Contribute
 1. Code
   * Clone the repo: git clone https://github.com/ChapmanCPSC370/TriviaGame.git
@@ -33,13 +36,13 @@ To view the code, click on the View menu, and then click on Code, or press F7.
 
 To view the designer, click on the View menu and then click on Designer, or press shift+F7
 
-###Run in MonoDevelop
-Note: MonoDevelop support winforms for .Net 2.0
-If you are not using Windows as your OS, then you will want to install [MonoDevelop](http://www.monodevelop.com/download/). It is supported on Linux, Mac OSX, and Windows. Depending on what OS you are using, you will follow different instruction to download and install.
+#####Run in MonoDevelop
+Developers can choose to do this in MonoDevelop but it will need to be started from scratch and be a separate project because MonoDevelop only supports winforms for .Net 2.0.
+You can install MonoDevelop from [here](http://www.monodevelop.com/download/) . It is supported on Linux, Mac OSX, and Windows. Depending on what OS you are using, you will follow different instruction to download and install.
 
 [Mono Documentation](http://www.monodevelop.com/documentation/)
 
 For UI elements, you will want to use [WinForms](http://www.mono-project.com/docs/gui/winforms/)
 
-##Mission Statement
-A place to make a collection of games. I enjoy making little games like this. Its a fun hobby and exercises my programming skills. I am also learning how to use github for OSS projects. If you also like creating games and want to see where your programming skills are, then feel free to contribute.
+##License
+[MIT License](http://opensource.org/licenses/MIT)
