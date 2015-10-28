@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+//using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 
 namespace TriviaGame
 {
@@ -12,7 +12,7 @@ namespace TriviaGame
         static void Main(string[] args)
         {
             //The logic for your trivia game happens here
-            List<Trivia> AllQuestions = GetTriviaList();
+           // List<Trivia> AllQuestions = GetTriviaList();
         }
 
 
@@ -20,7 +20,7 @@ namespace TriviaGame
         /// This function gets the full list of trivia questions from the Trivia.txt document
         /// </summary>
         /// <returns>A list of Trivia objects</returns>
-        static List<Trivia> GetTriviaList()
+        /*static List<Trivia> GetTriviaList()
         {
             //Get Contents from the file.  Remove the special char "\r".  Split on each line.  Convert to a list.
             List<string> contents = File.ReadAllText("trivia.txt").Replace("\r", "").Split('\n').ToList();
@@ -34,7 +34,7 @@ namespace TriviaGame
             // Example: Trivia newTrivia = new Trivia("what is my name?*question");
             //Return the full list of trivia questions
             return returnList;
-        }
+        }*/
     }
 
     class Trivia
