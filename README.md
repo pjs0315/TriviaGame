@@ -22,7 +22,7 @@ A place to make a collection of games. I enjoy making little games like this. It
 ##Prerequisites
   * Knowledge of [C#](https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx)
   * Knowledge of [SQLite](https://www.sqlite.org) is a plus
-  * Use a version of Visual Studio that supports .Net 4.5 Framework (currently doing research, may need to change this to 2.0)
+  * Use a version of Visual Studio that supports .Net 4.5 Framework
 
 ##Installation
 If you don't have Visual Studio installed, then download the free version of visual studio [here](https://www.visualstudio.com/downloads/download-visual-studio-vs) and follow install directions. A microsoft account may be neccesary for set up after the installation has completed.
