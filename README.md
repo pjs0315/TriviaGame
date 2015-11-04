@@ -46,3 +46,6 @@ For UI elements, you will want to use [WinForms](http://www.mono-project.com/doc
 
 ##License
 [MIT License](http://opensource.org/licenses/MIT)
+
+##Updates:
+11/3/2015: Set up sqlite DB. Program has code to get info from DB. Having issues with inheritance. Don't want to commit code for a program that is getting a runtime error. Added a new issue to the issue tracker. Will try to get this resolved soon. Have been using this as a resource: [https://msdn.microsoft.com/en-us/library/7h62478z(v=vs.110).aspx](https://msdn.microsoft.com/en-us/library/7h62478z(v=vs.110).aspx)
