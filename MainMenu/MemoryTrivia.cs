@@ -49,6 +49,10 @@ namespace MainMenu
             //compare the text on each button, if the answer matches the question, then buttons turn green, text stays, and button becomes disabled
 
             //click button, put what is in gameText into Text property
+            mButton clickedButton = (mButton)sender;
+            clickedButton.isFlipped = true;
+            clickedButton.Text = clickedButton.gameText;
+
 
      
         }
@@ -86,16 +90,53 @@ namespace MainMenu
                 {
                     int id = Convert.ToInt32(row["id"]);
                     intArr[arrayCounter] = id;
+                    textBox1.Text += id;
 
                     string question = row["question"].ToString();
                     qArr[arrayCounter] = question;
+                    textBox1.Text += "   ";
+                    textBox1.Text += question;
 
                     string ans = row["answer"].ToString();
                     ansArr[arrayCounter] = ans;
+                    textBox1.Text += "   ";
+                    textBox1.Text += ans;
                 }
 
 
-            }                       
+            }
+
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is mButton)
+                {
+                    c.Click += ButtonClick;
+                
+                }
+            }
+
+            //resetting counter
+            arrayCounter = 0;
+            int whichButton = 2;
+            foreach (Control c in this.Controls)
+            {
+                if (c is mButton && ((whichButton%2)==0) && arrayCounter < 10)//even
+                {
+                    var btn = (mButton)c;
+                    btn.gameText = qArr[arrayCounter];
+                    btn.ID = intArr[arrayCounter];
+                }
+                if (c is mButton && ((whichButton % 2) != 0) && arrayCounter < 10)//odd
+                {
+                     var btn = (mButton)c;
+                     btn.gameText = ansArr[arrayCounter];
+                     btn.ID = intArr[arrayCounter];
+                     ++arrayCounter;
+                
+                }
+                ++whichButton;
+            }
     
         }
 
