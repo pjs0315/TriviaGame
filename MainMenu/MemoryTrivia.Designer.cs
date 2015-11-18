@@ -65,9 +65,10 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(691, 135);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.Size = new System.Drawing.Size(166, 124);
             this.textBox1.TabIndex = 42;
             // 
             // mButton11
@@ -91,6 +92,7 @@
             this.mButton12.Size = new System.Drawing.Size(129, 51);
             this.mButton12.TabIndex = 39;
             this.mButton12.UseVisualStyleBackColor = true;
+            this.mButton12.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton13
             // 
@@ -102,6 +104,7 @@
             this.mButton13.Size = new System.Drawing.Size(129, 51);
             this.mButton13.TabIndex = 38;
             this.mButton13.UseVisualStyleBackColor = true;
+            this.mButton13.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton14
             // 
@@ -113,6 +116,7 @@
             this.mButton14.Size = new System.Drawing.Size(129, 51);
             this.mButton14.TabIndex = 37;
             this.mButton14.UseVisualStyleBackColor = true;
+            this.mButton14.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton15
             // 
@@ -124,6 +128,7 @@
             this.mButton15.Size = new System.Drawing.Size(129, 51);
             this.mButton15.TabIndex = 36;
             this.mButton15.UseVisualStyleBackColor = true;
+            this.mButton15.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton16
             // 
@@ -135,6 +140,7 @@
             this.mButton16.Size = new System.Drawing.Size(129, 51);
             this.mButton16.TabIndex = 35;
             this.mButton16.UseVisualStyleBackColor = true;
+            this.mButton16.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton17
             // 
@@ -146,6 +152,7 @@
             this.mButton17.Size = new System.Drawing.Size(129, 51);
             this.mButton17.TabIndex = 34;
             this.mButton17.UseVisualStyleBackColor = true;
+            this.mButton17.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton18
             // 
@@ -157,6 +164,7 @@
             this.mButton18.Size = new System.Drawing.Size(129, 51);
             this.mButton18.TabIndex = 33;
             this.mButton18.UseVisualStyleBackColor = true;
+            this.mButton18.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton19
             // 
@@ -168,6 +176,7 @@
             this.mButton19.Size = new System.Drawing.Size(129, 51);
             this.mButton19.TabIndex = 32;
             this.mButton19.UseVisualStyleBackColor = true;
+            this.mButton19.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton20
             // 
@@ -179,6 +188,7 @@
             this.mButton20.Size = new System.Drawing.Size(129, 51);
             this.mButton20.TabIndex = 31;
             this.mButton20.UseVisualStyleBackColor = true;
+            this.mButton20.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton9
             // 
@@ -190,6 +200,7 @@
             this.mButton9.Size = new System.Drawing.Size(129, 51);
             this.mButton9.TabIndex = 30;
             this.mButton9.UseVisualStyleBackColor = true;
+            this.mButton9.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton10
             // 
@@ -201,6 +212,7 @@
             this.mButton10.Size = new System.Drawing.Size(129, 51);
             this.mButton10.TabIndex = 29;
             this.mButton10.UseVisualStyleBackColor = true;
+            this.mButton10.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton7
             // 
@@ -212,6 +224,7 @@
             this.mButton7.Size = new System.Drawing.Size(129, 51);
             this.mButton7.TabIndex = 28;
             this.mButton7.UseVisualStyleBackColor = true;
+            this.mButton7.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton8
             // 
@@ -223,6 +236,7 @@
             this.mButton8.Size = new System.Drawing.Size(129, 51);
             this.mButton8.TabIndex = 27;
             this.mButton8.UseVisualStyleBackColor = true;
+            this.mButton8.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton5
             // 
@@ -234,6 +248,7 @@
             this.mButton5.Size = new System.Drawing.Size(129, 51);
             this.mButton5.TabIndex = 26;
             this.mButton5.UseVisualStyleBackColor = true;
+            this.mButton5.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton6
             // 
@@ -245,6 +260,7 @@
             this.mButton6.Size = new System.Drawing.Size(129, 51);
             this.mButton6.TabIndex = 25;
             this.mButton6.UseVisualStyleBackColor = true;
+            this.mButton6.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton3
             // 
@@ -256,6 +272,7 @@
             this.mButton3.Size = new System.Drawing.Size(129, 51);
             this.mButton3.TabIndex = 24;
             this.mButton3.UseVisualStyleBackColor = true;
+            this.mButton3.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton4
             // 
@@ -267,6 +284,7 @@
             this.mButton4.Size = new System.Drawing.Size(129, 51);
             this.mButton4.TabIndex = 23;
             this.mButton4.UseVisualStyleBackColor = true;
+            this.mButton4.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton2
             // 
@@ -278,6 +296,7 @@
             this.mButton2.Size = new System.Drawing.Size(129, 51);
             this.mButton2.TabIndex = 22;
             this.mButton2.UseVisualStyleBackColor = true;
+            this.mButton2.Click += new System.EventHandler(this.ButtonClick);
             // 
             // mButton1
             // 
@@ -289,6 +308,7 @@
             this.mButton1.Size = new System.Drawing.Size(129, 51);
             this.mButton1.TabIndex = 21;
             this.mButton1.UseVisualStyleBackColor = true;
+            this.mButton1.Click += new System.EventHandler(this.ButtonClick);
             // 
             // MemoryTrivia
             // 

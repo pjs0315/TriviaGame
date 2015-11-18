@@ -1,11 +1,7 @@
 ﻿/*
  * Name of table in DB: TriviaQuestions
  * Schema: CREATE TABLE TriviaQuestions(id integer primary key, question text, answer text);
- 
- 
  */
-
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,8 +19,9 @@ namespace MainMenu
     public partial class MemoryTrivia : Form
     {
 
-        //connecting to DB
-        //C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\bin\Debug
+        #region "DB Connection Initial"
+
+        //connecting to DB        
         static string fileDB = "questions.db";
         static string fullPath = Path.GetFullPath(fileDB);//getting path of db
 
@@ -33,30 +30,24 @@ namespace MainMenu
         SQLiteDataAdapter dataApt;
         DataTable tbl = new DataTable();
         SQLiteCommand cmd;
+        #endregion
 
         public MemoryTrivia()
         {
             InitializeComponent();
         }
 
+        #region "Button Click for All Buttons"
 
         private void ButtonClick(object sender, EventArgs e)
         {
-            //Button whichButton = (Button)sender; 
-
-            //when button is clicked, text appears
-            //user clicks another button, text appears
-            //compare the text on each button, if the answer matches the question, then buttons turn green, text stays, and button becomes disabled
-
-            //click button, put what is in gameText into Text property
             mButton clickedButton = (mButton)sender;
             clickedButton.isFlipped = true;
-            clickedButton.Text = clickedButton.gameText;
-
-
-     
+            clickedButton.Text = clickedButton.gameText;     
         }
+        #endregion
 
+        #region "Loading Trivia"
         private void MemoryTrivia_Load(object sender, EventArgs e)
         {
             //appears to have fixed casting issue
@@ -67,26 +58,29 @@ namespace MainMenu
                     c.Text = "";
                 }
             }
-
-            //example to load from DB
-            /* sqlConn.Open();
-                            comm = new SqlCommand("DELETE FROM Student WHERE StudentID = " + id, sqlConn);
-                            sql.DeleteCommand = comm;
-                            sql.DeleteCommand.ExecuteNonQuery();
-                            sqlConn.Close();*/
+            
+            //connect to DB
             connection.Open();
-            //load from database
-            dataApt = new SQLiteDataAdapter("SELECT * FROM TriviaQuestions ORDER BY RANDOM() LIMIT 10", connection);//change table to proper table name
-            dataApt.Fill(tbl);//filling datatable
 
-            string[] qArr = new string[10];
+            //load from database in random order
+            dataApt = new SQLiteDataAdapter("SELECT * FROM TriviaQuestions ORDER BY RANDOM() LIMIT 10", connection);//change table to proper table name
+            dataApt.Fill(tbl);
+
+            //Holds question data
+            string[] qArr = new string[10]; 
+
+            //Holds answer data
             string[] ansArr = new string[10];
+
+            //Holds row id data
             int[] intArr = new int[10];
+
             int arrayCounter = 0;
 
+            //Storing data from DB into arrays
             foreach (DataRow row in tbl.Rows)
             {
-                if (arrayCounter < 10)
+                if (arrayCounter < 10)//only 10 questions, don't want to go over limit
                 {
                     int id = Convert.ToInt32(row["id"]);
                     intArr[arrayCounter] = id;
@@ -102,19 +96,23 @@ namespace MainMenu
                     textBox1.Text += "   ";
                     textBox1.Text += ans;
                 }
-
-
             }
 
-
+            //adding all buttons to a single event handler called ButtonClick
+            int buttonCounter = 0;
             foreach (Control c in this.Controls)
             {
                 if (c is mButton)
                 {
                     c.Click += ButtonClick;
+                    ++buttonCounter;
                 
                 }
+                
             }
+            
+
+            textBox1.Text += "Adding Buttons:   "+ buttonCounter + "   ";
 
             //resetting counter
             arrayCounter = 0;
@@ -139,15 +137,17 @@ namespace MainMenu
             }
     
         }
+#endregion
 
+
+        #region "Back to Main Menu Button"
         private void btnQuitToMain_Click(object sender, EventArgs e)
         {
             frmMain main = new frmMain();
             this.Hide();
             main.Show();
             this.Close();
-            
-
         }
+        #endregion
     }
 }
