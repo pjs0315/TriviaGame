@@ -27,6 +27,14 @@ namespace MainMenu
         private void btnQuit_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();//seems to solve issue of process still running
+        }
+
+        private void btnTicTac_Click(object sender, EventArgs e)
+        {
+            TicTac ticTacToe = new TicTac();
+            this.Hide();
+            ticTacToe.Show();
         }
     }
 }

@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnTimed = new System.Windows.Forms.Button();
+            this.btnTicTac = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,12 +96,23 @@
             this.btnTimed.Text = "Timed";
             this.btnTimed.UseVisualStyleBackColor = true;
             // 
+            // btnTicTac
+            // 
+            this.btnTicTac.Location = new System.Drawing.Point(301, 102);
+            this.btnTicTac.Name = "btnTicTac";
+            this.btnTicTac.Size = new System.Drawing.Size(75, 23);
+            this.btnTicTac.TabIndex = 6;
+            this.btnTicTac.Text = "Tic Tac Toe";
+            this.btnTicTac.UseVisualStyleBackColor = true;
+            this.btnTicTac.Click += new System.EventHandler(this.btnTicTac_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(476, 323);
+            this.Controls.Add(this.btnTicTac);
             this.Controls.Add(this.btnTimed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnTimed;
+        private System.Windows.Forms.Button btnTicTac;
     }
 }
 

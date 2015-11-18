@@ -10,6 +10,7 @@ A place to make a collection of games. I enjoy making little games like this. It
   * Clone the repo: git clone https://github.com/ChapmanCPSC370/TriviaGame.git
   * Make changes
   * Create a Pull Request
+  * Add changes to the Development branch
   * If reporting issues, please label them and be specific about the problem.
   * For UI elements, please [use these prefix nameing conventions](https://msdn.microsoft.com/en-us/library/aa263493(v=vs.60).aspx)
   * For example, txtName for a textbox that takes in name or btnOk for an okay button
