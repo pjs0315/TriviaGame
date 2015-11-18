@@ -43,7 +43,8 @@ namespace MainMenu
         {
             mButton clickedButton = (mButton)sender;
             clickedButton.isFlipped = true;
-            clickedButton.Text = clickedButton.gameText;     
+            clickedButton.Text = clickedButton.gameText;
+            //clickedButton.Text = "Clicked";
         }
         #endregion
 
@@ -84,19 +85,22 @@ namespace MainMenu
                 {
                     int id = Convert.ToInt32(row["id"]);
                     intArr[arrayCounter] = id;
-                    textBox1.Text += id;
+                    textBox1.Text += " ID: "+intArr[arrayCounter];
 
                     string question = row["question"].ToString();
                     qArr[arrayCounter] = question;
-                    textBox1.Text += "   ";
-                    textBox1.Text += question;
+                    textBox1.Text += " Question: ";
+                    textBox1.Text += qArr[arrayCounter];
 
                     string ans = row["answer"].ToString();
                     ansArr[arrayCounter] = ans;
-                    textBox1.Text += "   ";
-                    textBox1.Text += ans;
+                    textBox1.Text += " Answer: ";
+                    textBox1.Text += ansArr[arrayCounter];
+                    textBox1.Text += "                         ";
                 }
+                ++arrayCounter;
             }
+            arrayCounter = 0; //resetting arrayCounter
 
             //adding all buttons to a single event handler called ButtonClick
             int buttonCounter = 0;
@@ -110,30 +114,35 @@ namespace MainMenu
                 }
                 
             }
-            
 
-            textBox1.Text += "Adding Buttons:   "+ buttonCounter + "   ";
+            for (int j = 0; j < qArr.Length; ++j) { textBox2.Text += j + ". " + qArr[j] + "  "; }
+            for (int j = 0; j < intArr.Length; ++j) { textBox2.Text += j + ". " + intArr[j] + "  "; }
+            for (int j = 0; j < ansArr.Length; ++j) { textBox2.Text += j + ". " + ansArr[j] + "  "; }
+           // textBox1.Text += "Adding Buttons:   "+ buttonCounter + "   ";
 
-            //resetting counter
-            arrayCounter = 0;
-            int whichButton = 2;
+            int whichButton = 0;
             foreach (Control c in this.Controls)
             {
-                if (c is mButton && ((whichButton%2)==0) && arrayCounter < 10)//even
-                {
-                    var btn = (mButton)c;
-                    btn.gameText = qArr[arrayCounter];
-                    btn.ID = intArr[arrayCounter];
+                textBox1.Text += "Array Counter: " + arrayCounter;
+                if (c is mButton)
+                {                      
+                    if (whichButton == 0 && arrayCounter < 10)
+                    {
+                        mButton btn = (mButton)c;
+                        btn.gameText = qArr[arrayCounter];
+                        btn.ID = intArr[arrayCounter];
+                        textBox1.Text += "Name: " + btn.Name + " ID: " + btn.ID + " Game Text: " + btn.gameText + "          ";
+                        whichButton = 1;
+                    }
+                    if (whichButton == 1)
+                    {
+                        mButton btn = (mButton)c;
+                        btn.gameText = ansArr[arrayCounter];
+                        btn.ID = intArr[arrayCounter];
+                        whichButton = 0;                               
+                    }                                                                                                        
                 }
-                if (c is mButton && ((whichButton % 2) != 0) && arrayCounter < 10)//odd
-                {
-                     var btn = (mButton)c;
-                     btn.gameText = ansArr[arrayCounter];
-                     btn.ID = intArr[arrayCounter];
-                     ++arrayCounter;
-                
-                }
-                ++whichButton;
+
             }
     
         }
