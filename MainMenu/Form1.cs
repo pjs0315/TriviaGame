@@ -14,7 +14,7 @@ namespace MainMenu
         {
             //this will be the main menu where the user will navigate to the game that they want to play
             InitializeComponent();
-            this.BackColor = Color.FromArgb(0,160,148);
+            //this.BackColor = Color.FromArgb(0,160,148);
         }
 
         private void btnMemory_Click(object sender, EventArgs e)
