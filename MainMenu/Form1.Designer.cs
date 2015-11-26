@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnTimed = new System.Windows.Forms.Button();
             this.btnTicTac = new System.Windows.Forms.Button();
+            this.btnHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -110,12 +111,23 @@
             this.btnTicTac.UseVisualStyleBackColor = true;
             this.btnTicTac.Click += new System.EventHandler(this.btnTicTac_Click);
             // 
+            // btnHang
+            // 
+            this.btnHang.Location = new System.Drawing.Point(187, 131);
+            this.btnHang.Name = "btnHang";
+            this.btnHang.Size = new System.Drawing.Size(75, 23);
+            this.btnHang.TabIndex = 7;
+            this.btnHang.Text = "Hang Man";
+            this.btnHang.UseVisualStyleBackColor = true;
+            this.btnHang.Click += new System.EventHandler(this.btnHang_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(476, 323);
+            this.Controls.Add(this.btnHang);
             this.Controls.Add(this.btnTicTac);
             this.Controls.Add(this.btnTimed);
             this.Controls.Add(this.label3);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnTimed;
         private System.Windows.Forms.Button btnTicTac;
+        private System.Windows.Forms.Button btnHang;
     }
 }
 

@@ -36,5 +36,12 @@ namespace MainMenu
             this.Hide();
             ticTacToe.Show();
         }
+
+        private void btnHang_Click(object sender, EventArgs e)
+        {
+            frmHang hangman = new frmHang();
+            this.Hide();
+            hangman.Show();
+        }
     }
 }
