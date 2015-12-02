@@ -40,11 +40,14 @@
             this.lblLegRight = new System.Windows.Forms.Label();
             this.lblLegLeft = new System.Windows.Forms.Label();
             this.lblHead = new System.Windows.Forms.Label();
+            this.btnCheckChar = new System.Windows.Forms.Button();
+            this.btnBackToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 26);
+            this.textBox1.MaxLength = 1;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
@@ -57,6 +60,7 @@
             this.lblStand.Size = new System.Drawing.Size(154, 16);
             this.lblStand.TabIndex = 1;
             this.lblStand.Text = "label1";
+            this.lblStand.Visible = false;
             // 
             // lblPole
             // 
@@ -65,6 +69,7 @@
             this.lblPole.Name = "lblPole";
             this.lblPole.Size = new System.Drawing.Size(21, 215);
             this.lblPole.TabIndex = 2;
+            this.lblPole.Visible = false;
             // 
             // lblArm
             // 
@@ -74,6 +79,7 @@
             this.lblArm.Name = "lblArm";
             this.lblArm.Size = new System.Drawing.Size(138, 10);
             this.lblArm.TabIndex = 3;
+            this.lblArm.Visible = false;
             // 
             // lblHook
             // 
@@ -82,60 +88,90 @@
             this.lblHook.Name = "lblHook";
             this.lblHook.Size = new System.Drawing.Size(13, 22);
             this.lblHook.TabIndex = 4;
+            this.lblHook.Visible = false;
             // 
             // lblBody
             // 
-            this.lblBody.Location = new System.Drawing.Point(260, 17);
+            this.lblBody.Image = ((System.Drawing.Image)(resources.GetObject("lblBody.Image")));
+            this.lblBody.Location = new System.Drawing.Point(246, 140);
             this.lblBody.Name = "lblBody";
-            this.lblBody.Size = new System.Drawing.Size(100, 23);
+            this.lblBody.Size = new System.Drawing.Size(21, 78);
             this.lblBody.TabIndex = 6;
-            this.lblBody.Text = "label6";
+            this.lblBody.Visible = false;
             // 
             // lblArmRight
             // 
-            this.lblArmRight.Location = new System.Drawing.Point(144, 9);
+            this.lblArmRight.Image = ((System.Drawing.Image)(resources.GetObject("lblArmRight.Image")));
+            this.lblArmRight.Location = new System.Drawing.Point(258, 158);
             this.lblArmRight.Name = "lblArmRight";
-            this.lblArmRight.Size = new System.Drawing.Size(100, 23);
+            this.lblArmRight.Size = new System.Drawing.Size(54, 10);
             this.lblArmRight.TabIndex = 7;
             this.lblArmRight.Text = "label7";
+            this.lblArmRight.Visible = false;
             // 
             // lblArmLeft
             // 
-            this.lblArmLeft.Location = new System.Drawing.Point(106, 228);
+            this.lblArmLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblArmLeft.Image")));
+            this.lblArmLeft.Location = new System.Drawing.Point(208, 158);
             this.lblArmLeft.Name = "lblArmLeft";
-            this.lblArmLeft.Size = new System.Drawing.Size(100, 23);
+            this.lblArmLeft.Size = new System.Drawing.Size(43, 10);
             this.lblArmLeft.TabIndex = 8;
             this.lblArmLeft.Text = "label8";
+            this.lblArmLeft.Visible = false;
             // 
             // lblLegRight
             // 
-            this.lblLegRight.Location = new System.Drawing.Point(68, 79);
+            this.lblLegRight.Image = ((System.Drawing.Image)(resources.GetObject("lblLegRight.Image")));
+            this.lblLegRight.Location = new System.Drawing.Point(246, 212);
             this.lblLegRight.Name = "lblLegRight";
-            this.lblLegRight.Size = new System.Drawing.Size(100, 23);
+            this.lblLegRight.Size = new System.Drawing.Size(38, 51);
             this.lblLegRight.TabIndex = 9;
-            this.lblLegRight.Text = "label9";
+            this.lblLegRight.Visible = false;
             // 
             // lblLegLeft
             // 
-            this.lblLegLeft.Location = new System.Drawing.Point(56, 140);
+            this.lblLegLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblLegLeft.Image")));
+            this.lblLegLeft.Location = new System.Drawing.Point(228, 215);
             this.lblLegLeft.Name = "lblLegLeft";
-            this.lblLegLeft.Size = new System.Drawing.Size(100, 23);
+            this.lblLegLeft.Size = new System.Drawing.Size(32, 35);
             this.lblLegLeft.TabIndex = 10;
-            this.lblLegLeft.Text = "label10";
+            this.lblLegLeft.Visible = false;
             // 
             // lblHead
             // 
-            this.lblHead.Location = new System.Drawing.Point(201, 79);
+            this.lblHead.Image = ((System.Drawing.Image)(resources.GetObject("lblHead.Image")));
+            this.lblHead.Location = new System.Drawing.Point(204, 76);
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(100, 64);
             this.lblHead.TabIndex = 11;
-            this.lblHead.Text = "label10";
+            // 
+            // btnCheckChar
+            // 
+            this.btnCheckChar.Location = new System.Drawing.Point(21, 54);
+            this.btnCheckChar.Name = "btnCheckChar";
+            this.btnCheckChar.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckChar.TabIndex = 12;
+            this.btnCheckChar.Text = "Check";
+            this.btnCheckChar.UseVisualStyleBackColor = true;
+            this.btnCheckChar.Click += new System.EventHandler(this.btnCheckChar_Click);
+            // 
+            // btnBackToMain
+            // 
+            this.btnBackToMain.Location = new System.Drawing.Point(12, 287);
+            this.btnBackToMain.Name = "btnBackToMain";
+            this.btnBackToMain.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMain.TabIndex = 13;
+            this.btnBackToMain.Text = "Main Menu";
+            this.btnBackToMain.UseVisualStyleBackColor = true;
+            this.btnBackToMain.Click += new System.EventHandler(this.btnBackToMain_Click);
             // 
             // frmHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 322);
+            this.Controls.Add(this.btnBackToMain);
+            this.Controls.Add(this.btnCheckChar);
             this.Controls.Add(this.lblHead);
             this.Controls.Add(this.lblLegLeft);
             this.Controls.Add(this.lblLegRight);
@@ -167,5 +203,7 @@
         private System.Windows.Forms.Label lblLegRight;
         private System.Windows.Forms.Label lblLegLeft;
         private System.Windows.Forms.Label lblHead;
+        private System.Windows.Forms.Button btnCheckChar;
+        private System.Windows.Forms.Button btnBackToMain;
     }
 }
