@@ -68,14 +68,17 @@ namespace MainMenu
                         break;
                     case 9: lblLegLeft.Visible = true; ++strikes;
                         break;
-                    case 10: lblLegRight.Visible = true; ++strikes;
+                    case 10: lblLegRight.Visible = true; ++strikes; textBox1.Enabled = false; btnCheckChar.Enabled = false; lblGameOver.Text = "Game Over";
                         break;
-
                 }
             }
+            else if (foundMatch == true)
+            {
+                string s = new string(charArray);
+                lblWord.Text = s;
+            }
 
-            string s = new string(charArray);
-            lblWord.Text = s;
+          
         }
         #endregion
 
