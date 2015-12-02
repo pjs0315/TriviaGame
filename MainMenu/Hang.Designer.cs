@@ -42,6 +42,7 @@
             this.lblHead = new System.Windows.Forms.Label();
             this.btnCheckChar = new System.Windows.Forms.Button();
             this.btnBackToMain = new System.Windows.Forms.Button();
+            this.lblWord = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -144,6 +145,7 @@
             this.lblHead.Name = "lblHead";
             this.lblHead.Size = new System.Drawing.Size(100, 64);
             this.lblHead.TabIndex = 11;
+            this.lblHead.Visible = false;
             // 
             // btnCheckChar
             // 
@@ -165,11 +167,21 @@
             this.btnBackToMain.UseVisualStyleBackColor = true;
             this.btnBackToMain.Click += new System.EventHandler(this.btnBackToMain_Click);
             // 
+            // lblWord
+            // 
+            this.lblWord.AutoSize = true;
+            this.lblWord.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblWord.Location = new System.Drawing.Point(18, 100);
+            this.lblWord.Name = "lblWord";
+            this.lblWord.Size = new System.Drawing.Size(2, 15);
+            this.lblWord.TabIndex = 14;
+            // 
             // frmHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 322);
+            this.Controls.Add(this.lblWord);
             this.Controls.Add(this.btnBackToMain);
             this.Controls.Add(this.btnCheckChar);
             this.Controls.Add(this.lblHead);
@@ -185,6 +197,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "frmHang";
             this.Text = "Hang";
+            this.Load += new System.EventHandler(this.frmHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +218,6 @@
         private System.Windows.Forms.Label lblHead;
         private System.Windows.Forms.Button btnCheckChar;
         private System.Windows.Forms.Button btnBackToMain;
+        private System.Windows.Forms.Label lblWord;
     }
 }
