@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnTimed = new System.Windows.Forms.Button();
             this.btnTicTac = new System.Windows.Forms.Button();
+            this.btnHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +45,7 @@
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.Location = new System.Drawing.Point(116, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 68);
+            this.label1.Size = new System.Drawing.Size(217, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Main Menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -72,24 +73,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.Location = new System.Drawing.Point(38, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(67, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Trivia:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(217, 80);
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label3.Location = new System.Drawing.Point(184, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.Size = new System.Drawing.Size(126, 26);
             this.label3.TabIndex = 4;
             this.label3.Text = "Other Games:";
             // 
             // btnTimed
             // 
-            this.btnTimed.Location = new System.Drawing.Point(38, 154);
+            this.btnTimed.Location = new System.Drawing.Point(38, 131);
             this.btnTimed.Name = "btnTimed";
             this.btnTimed.Size = new System.Drawing.Size(75, 23);
             this.btnTimed.TabIndex = 5;
@@ -98,7 +103,7 @@
             // 
             // btnTicTac
             // 
-            this.btnTicTac.Location = new System.Drawing.Point(301, 102);
+            this.btnTicTac.Location = new System.Drawing.Point(187, 102);
             this.btnTicTac.Name = "btnTicTac";
             this.btnTicTac.Size = new System.Drawing.Size(75, 23);
             this.btnTicTac.TabIndex = 6;
@@ -106,12 +111,23 @@
             this.btnTicTac.UseVisualStyleBackColor = true;
             this.btnTicTac.Click += new System.EventHandler(this.btnTicTac_Click);
             // 
+            // btnHang
+            // 
+            this.btnHang.Location = new System.Drawing.Point(187, 131);
+            this.btnHang.Name = "btnHang";
+            this.btnHang.Size = new System.Drawing.Size(75, 23);
+            this.btnHang.TabIndex = 7;
+            this.btnHang.Text = "Hang Man";
+            this.btnHang.UseVisualStyleBackColor = true;
+            this.btnHang.Click += new System.EventHandler(this.btnHang_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(476, 323);
+            this.Controls.Add(this.btnHang);
             this.Controls.Add(this.btnTicTac);
             this.Controls.Add(this.btnTimed);
             this.Controls.Add(this.label3);
@@ -134,6 +150,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnTimed;
         private System.Windows.Forms.Button btnTicTac;
+        private System.Windows.Forms.Button btnHang;
     }
 }
 

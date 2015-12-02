@@ -1,0 +1,209 @@
+﻿namespace MainMenu
+{
+    partial class frmHang
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHang));
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblStand = new System.Windows.Forms.Label();
+            this.lblPole = new System.Windows.Forms.Label();
+            this.lblArm = new System.Windows.Forms.Label();
+            this.lblHook = new System.Windows.Forms.Label();
+            this.lblBody = new System.Windows.Forms.Label();
+            this.lblArmRight = new System.Windows.Forms.Label();
+            this.lblArmLeft = new System.Windows.Forms.Label();
+            this.lblLegRight = new System.Windows.Forms.Label();
+            this.lblLegLeft = new System.Windows.Forms.Label();
+            this.lblHead = new System.Windows.Forms.Label();
+            this.btnCheckChar = new System.Windows.Forms.Button();
+            this.btnBackToMain = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 26);
+            this.textBox1.MaxLength = 1;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // lblStand
+            // 
+            this.lblStand.Image = ((System.Drawing.Image)(resources.GetObject("lblStand.Image")));
+            this.lblStand.Location = new System.Drawing.Point(246, 269);
+            this.lblStand.Name = "lblStand";
+            this.lblStand.Size = new System.Drawing.Size(154, 16);
+            this.lblStand.TabIndex = 1;
+            this.lblStand.Text = "label1";
+            this.lblStand.Visible = false;
+            // 
+            // lblPole
+            // 
+            this.lblPole.Image = ((System.Drawing.Image)(resources.GetObject("lblPole.Image")));
+            this.lblPole.Location = new System.Drawing.Point(369, 54);
+            this.lblPole.Name = "lblPole";
+            this.lblPole.Size = new System.Drawing.Size(21, 215);
+            this.lblPole.TabIndex = 2;
+            this.lblPole.Visible = false;
+            // 
+            // lblArm
+            // 
+            this.lblArm.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblArm.Image = ((System.Drawing.Image)(resources.GetObject("lblArm.Image")));
+            this.lblArm.Location = new System.Drawing.Point(249, 44);
+            this.lblArm.Name = "lblArm";
+            this.lblArm.Size = new System.Drawing.Size(138, 10);
+            this.lblArm.TabIndex = 3;
+            this.lblArm.Visible = false;
+            // 
+            // lblHook
+            // 
+            this.lblHook.Image = ((System.Drawing.Image)(resources.GetObject("lblHook.Image")));
+            this.lblHook.Location = new System.Drawing.Point(249, 54);
+            this.lblHook.Name = "lblHook";
+            this.lblHook.Size = new System.Drawing.Size(13, 22);
+            this.lblHook.TabIndex = 4;
+            this.lblHook.Visible = false;
+            // 
+            // lblBody
+            // 
+            this.lblBody.Image = ((System.Drawing.Image)(resources.GetObject("lblBody.Image")));
+            this.lblBody.Location = new System.Drawing.Point(246, 140);
+            this.lblBody.Name = "lblBody";
+            this.lblBody.Size = new System.Drawing.Size(21, 78);
+            this.lblBody.TabIndex = 6;
+            this.lblBody.Visible = false;
+            // 
+            // lblArmRight
+            // 
+            this.lblArmRight.Image = ((System.Drawing.Image)(resources.GetObject("lblArmRight.Image")));
+            this.lblArmRight.Location = new System.Drawing.Point(258, 158);
+            this.lblArmRight.Name = "lblArmRight";
+            this.lblArmRight.Size = new System.Drawing.Size(54, 10);
+            this.lblArmRight.TabIndex = 7;
+            this.lblArmRight.Text = "label7";
+            this.lblArmRight.Visible = false;
+            // 
+            // lblArmLeft
+            // 
+            this.lblArmLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblArmLeft.Image")));
+            this.lblArmLeft.Location = new System.Drawing.Point(208, 158);
+            this.lblArmLeft.Name = "lblArmLeft";
+            this.lblArmLeft.Size = new System.Drawing.Size(43, 10);
+            this.lblArmLeft.TabIndex = 8;
+            this.lblArmLeft.Text = "label8";
+            this.lblArmLeft.Visible = false;
+            // 
+            // lblLegRight
+            // 
+            this.lblLegRight.Image = ((System.Drawing.Image)(resources.GetObject("lblLegRight.Image")));
+            this.lblLegRight.Location = new System.Drawing.Point(246, 212);
+            this.lblLegRight.Name = "lblLegRight";
+            this.lblLegRight.Size = new System.Drawing.Size(38, 51);
+            this.lblLegRight.TabIndex = 9;
+            this.lblLegRight.Visible = false;
+            // 
+            // lblLegLeft
+            // 
+            this.lblLegLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblLegLeft.Image")));
+            this.lblLegLeft.Location = new System.Drawing.Point(228, 215);
+            this.lblLegLeft.Name = "lblLegLeft";
+            this.lblLegLeft.Size = new System.Drawing.Size(32, 35);
+            this.lblLegLeft.TabIndex = 10;
+            this.lblLegLeft.Visible = false;
+            // 
+            // lblHead
+            // 
+            this.lblHead.Image = ((System.Drawing.Image)(resources.GetObject("lblHead.Image")));
+            this.lblHead.Location = new System.Drawing.Point(204, 76);
+            this.lblHead.Name = "lblHead";
+            this.lblHead.Size = new System.Drawing.Size(100, 64);
+            this.lblHead.TabIndex = 11;
+            // 
+            // btnCheckChar
+            // 
+            this.btnCheckChar.Location = new System.Drawing.Point(21, 54);
+            this.btnCheckChar.Name = "btnCheckChar";
+            this.btnCheckChar.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckChar.TabIndex = 12;
+            this.btnCheckChar.Text = "Check";
+            this.btnCheckChar.UseVisualStyleBackColor = true;
+            this.btnCheckChar.Click += new System.EventHandler(this.btnCheckChar_Click);
+            // 
+            // btnBackToMain
+            // 
+            this.btnBackToMain.Location = new System.Drawing.Point(12, 287);
+            this.btnBackToMain.Name = "btnBackToMain";
+            this.btnBackToMain.Size = new System.Drawing.Size(75, 23);
+            this.btnBackToMain.TabIndex = 13;
+            this.btnBackToMain.Text = "Main Menu";
+            this.btnBackToMain.UseVisualStyleBackColor = true;
+            this.btnBackToMain.Click += new System.EventHandler(this.btnBackToMain_Click);
+            // 
+            // frmHang
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(412, 322);
+            this.Controls.Add(this.btnBackToMain);
+            this.Controls.Add(this.btnCheckChar);
+            this.Controls.Add(this.lblHead);
+            this.Controls.Add(this.lblLegLeft);
+            this.Controls.Add(this.lblLegRight);
+            this.Controls.Add(this.lblArmLeft);
+            this.Controls.Add(this.lblArmRight);
+            this.Controls.Add(this.lblBody);
+            this.Controls.Add(this.lblHook);
+            this.Controls.Add(this.lblArm);
+            this.Controls.Add(this.lblPole);
+            this.Controls.Add(this.lblStand);
+            this.Controls.Add(this.textBox1);
+            this.Name = "frmHang";
+            this.Text = "Hang";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblStand;
+        private System.Windows.Forms.Label lblPole;
+        private System.Windows.Forms.Label lblArm;
+        private System.Windows.Forms.Label lblHook;
+        private System.Windows.Forms.Label lblBody;
+        private System.Windows.Forms.Label lblArmRight;
+        private System.Windows.Forms.Label lblArmLeft;
+        private System.Windows.Forms.Label lblLegRight;
+        private System.Windows.Forms.Label lblLegLeft;
+        private System.Windows.Forms.Label lblHead;
+        private System.Windows.Forms.Button btnCheckChar;
+        private System.Windows.Forms.Button btnBackToMain;
+    }
+}

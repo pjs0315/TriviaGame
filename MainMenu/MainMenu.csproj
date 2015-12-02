@@ -74,6 +74,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hang.Designer.cs">
+      <DependentUpon>Hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="mButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hang.resx">
+      <DependentUpon>Hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemoryTrivia.resx">
       <DependentUpon>MemoryTrivia.cs</DependentUpon>
