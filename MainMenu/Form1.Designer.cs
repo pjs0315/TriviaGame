@@ -33,7 +33,6 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnTimed = new System.Windows.Forms.Button();
             this.btnTicTac = new System.Windows.Forms.Button();
             this.btnHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -92,15 +91,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Other Games:";
             // 
-            // btnTimed
-            // 
-            this.btnTimed.Location = new System.Drawing.Point(38, 131);
-            this.btnTimed.Name = "btnTimed";
-            this.btnTimed.Size = new System.Drawing.Size(75, 23);
-            this.btnTimed.TabIndex = 5;
-            this.btnTimed.Text = "Timed";
-            this.btnTimed.UseVisualStyleBackColor = true;
-            // 
             // btnTicTac
             // 
             this.btnTicTac.Location = new System.Drawing.Point(187, 102);
@@ -129,7 +119,6 @@
             this.ClientSize = new System.Drawing.Size(476, 323);
             this.Controls.Add(this.btnHang);
             this.Controls.Add(this.btnTicTac);
-            this.Controls.Add(this.btnTimed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnQuit);
@@ -148,7 +137,6 @@
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnTimed;
         private System.Windows.Forms.Button btnTicTac;
         private System.Windows.Forms.Button btnHang;
     }

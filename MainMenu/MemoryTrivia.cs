@@ -1,6 +1,7 @@
 ﻿/*
  * Name of table in DB: TriviaQuestions
  * Schema: CREATE TABLE TriviaQuestions(id integer primary key, question text, answer text);
+ * 
  */
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,6 @@ namespace MainMenu
             mButton clickedButton = (mButton)sender;
             clickedButton.isFlipped = true;
             clickedButton.Text = clickedButton.gameText;
-            //clickedButton.Text = "Clicked";
         }
         #endregion
 
@@ -85,18 +85,12 @@ namespace MainMenu
                 {
                     int id = Convert.ToInt32(row["id"]);
                     intArr[arrayCounter] = id;
-                    textBox1.Text += " ID: "+intArr[arrayCounter];
 
                     string question = row["question"].ToString();
                     qArr[arrayCounter] = question;
-                    textBox1.Text += " Question: ";
-                    textBox1.Text += qArr[arrayCounter];
 
                     string ans = row["answer"].ToString();
                     ansArr[arrayCounter] = ans;
-                    textBox1.Text += " Answer: ";
-                    textBox1.Text += ansArr[arrayCounter];
-                    textBox1.Text += "                         ";
                 }
                 ++arrayCounter;
             }
@@ -115,39 +109,19 @@ namespace MainMenu
                 
             }
 
-            for (int j = 0; j < qArr.Length; ++j) { textBox2.Text += j + ". " + qArr[j] + "  "; }
-            for (int j = 0; j < intArr.Length; ++j) { textBox2.Text += j + ". " + intArr[j] + "  "; }
-            for (int j = 0; j < ansArr.Length; ++j) { textBox2.Text += j + ". " + ansArr[j] + "  "; }
-           // textBox1.Text += "Adding Buttons:   "+ buttonCounter + "   ";
-
-            int whichButton = 0;
-            foreach (Control c in this.Controls)
+            for (int i = 1; i < 21; ++i)
             {
-                textBox1.Text += "Array Counter: " + arrayCounter;
-                if (c is mButton)
-                {                      
-                    if (whichButton == 0 && arrayCounter < 10)
-                    {
-                        mButton btn = (mButton)c;
-                        btn.gameText = qArr[arrayCounter];
-                        btn.ID = intArr[arrayCounter];
-                        textBox1.Text += "Name: " + btn.Name + " ID: " + btn.ID + " Game Text: " + btn.gameText + "          ";
-                        whichButton = 1;
-                    }
-                    if (whichButton == 1)
-                    {
-                        mButton btn = (mButton)c;
-                        btn.gameText = ansArr[arrayCounter];
-                        btn.ID = intArr[arrayCounter];
-                        whichButton = 0;                               
-                    }                                                                                                        
-                }
+                string name = "mButton" + i;
+                Control b = this.Controls.Find(name, true).FirstOrDefault() as mButton;
+                mButton btn = (mButton)b;
+                if (i <= 10)
+                { btn.gameText = qArr[i - 1]; btn.ID = intArr[i - 1]; }
+                if (i > 10)
+                { btn.gameText = ansArr[i - 11]; btn.ID = intArr[i - 11]; }
 
             }
-    
         }
 #endregion
-
 
         #region "Back to Main Menu Button"
         private void btnQuitToMain_Click(object sender, EventArgs e)
