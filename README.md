@@ -51,6 +51,3 @@ For UI elements, you will want to use [WinForms](http://www.mono-project.com/doc
 ##Communication
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ChapmanCPSC370/TriviaGame?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 Developers can now communicate in the Gitter chat room.
-
-##Updates:
-11/3/2015: Set up sqlite DB. Program has code to get info from DB. Having issues with inheritance. Don't want to commit code for a program that is getting a runtime error. Added a new issue to the issue tracker. Will try to get this resolved soon. Have been using this as a resource: [https://msdn.microsoft.com/en-us/library/7h62478z(v=vs.110).aspx](https://msdn.microsoft.com/en-us/library/7h62478z(v=vs.110).aspx) and this: [https://msdn.microsoft.com/en-us/library/5h0k2e6x(v=vs.110).aspx](https://msdn.microsoft.com/en-us/library/5h0k2e6x(v=vs.110).aspx)
