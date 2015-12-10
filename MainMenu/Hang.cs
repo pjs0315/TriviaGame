@@ -7,25 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
+//using System.Random;
 
 namespace MainMenu
 {
     public partial class frmHang : Form
     {
-        string word = "test";
+        string[] lines;
+        Random rnd = new Random();
+        string path;
+        string word;
         char userAnswer = '1';
         int strikes = 1;
-        char[] charArray;   
+        char[] charArray;  
 
         public frmHang()
         {
             InitializeComponent();
+            word = generateWord();
         }
 
         private void btnCheckChar_Click(object sender, EventArgs e)
         {
-             
-            userAnswer = Convert.ToChar(textBox1.Text);           
+            
+            userAnswer = Convert.ToChar(textBox1.Text);          
             checkForChar();
         }
 
@@ -33,13 +40,14 @@ namespace MainMenu
 
         private void checkForChar()
         {
+          
             int index = 0;
             bool foundMatch = false;
 
             foreach (char ch in word)
             {
                 if (ch == userAnswer)
-                { 
+                {
                     charArray[index] = ch;
                     foundMatch = true;
                 }
@@ -68,8 +76,10 @@ namespace MainMenu
                         break;
                     case 9: lblLegLeft.Visible = true; ++strikes;
                         break;
-                    case 10: lblLegRight.Visible = true; ++strikes; textBox1.Enabled = false; btnCheckChar.Enabled = false; lblGameOver.Text = "Game Over";
+                    case 10: lblLegRight.Visible = true; ++strikes; textBox1.Enabled = false; btnCheckChar.Enabled = false; lblGameOver.Text = "Game Over"; textBox1.Text = word;
                         break;
+                    default: break;
+
                 }
             }
             else if (foundMatch == true)
@@ -78,11 +88,18 @@ namespace MainMenu
                 lblWord.Text = s;
             }
 
-          
+         
         }
         #endregion
 
         #region "Back to Main Button"
+        private string generateWord()
+        {
+            string hmm = Directory.GetCurrentDirectory() + "\\hangWords.txt";
+            lines = System.IO.File.ReadAllLines(hmm);
+            int wordIndex = rnd.Next(lines.Length);
+            return lines[wordIndex];
+        }
 
         private void btnBackToMain_Click(object sender, EventArgs e)
         {
