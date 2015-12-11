@@ -1,0 +1,6 @@
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\bin\Debug\trivia.txt
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\bin\Debug\TriviaGame.exe.config
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\bin\Debug\TriviaGame.exe
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\bin\Debug\TriviaGame.pdb
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\obj\Debug\TriviaGame.exe
+C:\Users\Ani\Documents\GitHub\TriviaGame\TriviaGame\obj\Debug\TriviaGame.pdb
