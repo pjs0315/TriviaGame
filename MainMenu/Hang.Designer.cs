@@ -219,7 +219,8 @@
             this.Controls.Add(this.lblLegRight);
             this.Controls.Add(this.lblLegLeft);
             this.Name = "frmHang";
-            this.Text = "Hang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hangman";
             this.Load += new System.EventHandler(this.frmHang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

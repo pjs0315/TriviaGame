@@ -125,6 +125,8 @@
             this.Controls.Add(this.btnMemory);
             this.Controls.Add(this.label1);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Collection of Games";
             this.ResumeLayout(false);
             this.PerformLayout();
 

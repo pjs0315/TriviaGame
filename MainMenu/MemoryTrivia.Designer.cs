@@ -367,6 +367,7 @@
             this.Controls.Add(this.mButton1);
             this.Controls.Add(this.btnQuitToMain);
             this.Name = "MemoryTrivia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MemoryTrivia";
             this.Load += new System.EventHandler(this.MemoryTrivia_Load);
             this.ResumeLayout(false);
