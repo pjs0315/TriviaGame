@@ -36,42 +36,42 @@ namespace MainMenu
         private void checkWinner()
         {
             if (label1.Text == "X" && label5.Text == "X" && label7.Text == "X") //diag
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if (label3.Text == "X" && label5.Text == "X" && label9.Text == "X")//diag
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if (label1.Text == "X" && label4.Text == "X" && label9.Text == "X")//vert
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if (label2.Text == "X" && label5.Text == "X" && label8.Text == "X")//vert
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if (label3.Text == "X" && label6.Text == "X" && label7.Text == "X")//vert
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if(label1.Text == "X" && label2.Text == "X" && label3.Text == "X") //horizontal
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if(label4.Text == "X" && label5.Text == "X" && label6.Text == "X")//horizontal
-            { label10.Text += " Player 1!"; foundWinner = true; }
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }
             else if (label9.Text == "X" && label8.Text == "X" && label7.Text == "X")//horizontal
-            { label10.Text += " Player 1!"; foundWinner = true; }//======================================================
+            { label10.Text += " Winner Player 1!"; foundWinner = true; }//======================================================
             else if (label1.Text == "O" && label5.Text == "O" && label7.Text == "O") //diag
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label3.Text == "O" && label5.Text == "O" && label9.Text == "O")//diag
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label1.Text == "O" && label4.Text == "O" && label9.Text == "O")//vert
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label2.Text == "O" && label5.Text == "O" && label8.Text == "O")//vert
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label3.Text == "O" && label6.Text == "O" && label7.Text == "O")//vert
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label1.Text == "O" && label2.Text == "O" && label3.Text == "O") //horizontal
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label4.Text == "O" && label5.Text == "O" && label6.Text == "O")//horizontal
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else if (label9.Text == "O" && label8.Text == "O" && label7.Text == "O")//horizontal
-            { label10.Text += " Player 2!"; foundWinner = true; }
+            { label10.Text += " Winner Player 2!"; foundWinner = true; }
             else
             {
                 if (num == 10)
                 {
-                    label10.Text = "Draw";
+                    label10.Text += " Draw";
                     foundWinner = true;
                 }
             }

@@ -164,16 +164,16 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(309, 20);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.Size = new System.Drawing.Size(56, 13);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Winner:";
+            this.label10.Text = "Outcome :";
             // 
             // TicTac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(410, 326);
+            this.ClientSize = new System.Drawing.Size(482, 326);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.label7);
@@ -187,6 +187,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TicTac";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TicTac";
             this.ResumeLayout(false);
             this.PerformLayout();
