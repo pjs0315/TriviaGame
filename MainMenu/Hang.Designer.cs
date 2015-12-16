@@ -44,6 +44,7 @@
             this.btnBackToMain = new System.Windows.Forms.Button();
             this.lblWord = new System.Windows.Forms.Label();
             this.lblGameOver = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -95,18 +96,18 @@
             // lblBody
             // 
             this.lblBody.Image = ((System.Drawing.Image)(resources.GetObject("lblBody.Image")));
-            this.lblBody.Location = new System.Drawing.Point(246, 140);
+            this.lblBody.Location = new System.Drawing.Point(246, 129);
             this.lblBody.Name = "lblBody";
-            this.lblBody.Size = new System.Drawing.Size(21, 78);
+            this.lblBody.Size = new System.Drawing.Size(22, 88);
             this.lblBody.TabIndex = 6;
             this.lblBody.Visible = false;
             // 
             // lblArmRight
             // 
             this.lblArmRight.Image = ((System.Drawing.Image)(resources.GetObject("lblArmRight.Image")));
-            this.lblArmRight.Location = new System.Drawing.Point(258, 158);
+            this.lblArmRight.Location = new System.Drawing.Point(258, 153);
             this.lblArmRight.Name = "lblArmRight";
-            this.lblArmRight.Size = new System.Drawing.Size(54, 10);
+            this.lblArmRight.Size = new System.Drawing.Size(50, 10);
             this.lblArmRight.TabIndex = 7;
             this.lblArmRight.Text = "label7";
             this.lblArmRight.Visible = false;
@@ -114,9 +115,9 @@
             // lblArmLeft
             // 
             this.lblArmLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblArmLeft.Image")));
-            this.lblArmLeft.Location = new System.Drawing.Point(208, 158);
+            this.lblArmLeft.Location = new System.Drawing.Point(205, 153);
             this.lblArmLeft.Name = "lblArmLeft";
-            this.lblArmLeft.Size = new System.Drawing.Size(43, 10);
+            this.lblArmLeft.Size = new System.Drawing.Size(50, 10);
             this.lblArmLeft.TabIndex = 8;
             this.lblArmLeft.Text = "label8";
             this.lblArmLeft.Visible = false;
@@ -124,27 +125,27 @@
             // lblLegRight
             // 
             this.lblLegRight.Image = ((System.Drawing.Image)(resources.GetObject("lblLegRight.Image")));
-            this.lblLegRight.Location = new System.Drawing.Point(246, 212);
+            this.lblLegRight.Location = new System.Drawing.Point(254, 204);
             this.lblLegRight.Name = "lblLegRight";
-            this.lblLegRight.Size = new System.Drawing.Size(38, 51);
+            this.lblLegRight.Size = new System.Drawing.Size(30, 40);
             this.lblLegRight.TabIndex = 9;
             this.lblLegRight.Visible = false;
             // 
             // lblLegLeft
             // 
             this.lblLegLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblLegLeft.Image")));
-            this.lblLegLeft.Location = new System.Drawing.Point(228, 215);
+            this.lblLegLeft.Location = new System.Drawing.Point(225, 206);
             this.lblLegLeft.Name = "lblLegLeft";
-            this.lblLegLeft.Size = new System.Drawing.Size(32, 35);
+            this.lblLegLeft.Size = new System.Drawing.Size(36, 35);
             this.lblLegLeft.TabIndex = 10;
             this.lblLegLeft.Visible = false;
             // 
             // lblHead
             // 
             this.lblHead.Image = ((System.Drawing.Image)(resources.GetObject("lblHead.Image")));
-            this.lblHead.Location = new System.Drawing.Point(204, 76);
+            this.lblHead.Location = new System.Drawing.Point(216, 75);
             this.lblHead.Name = "lblHead";
-            this.lblHead.Size = new System.Drawing.Size(100, 64);
+            this.lblHead.Size = new System.Drawing.Size(80, 54);
             this.lblHead.TabIndex = 11;
             this.lblHead.Visible = false;
             // 
@@ -186,26 +187,37 @@
             this.lblGameOver.TabIndex = 15;
             this.lblGameOver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Used Letters: ";
+            // 
             // frmHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(412, 322);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHead);
+            this.Controls.Add(this.lblArmLeft);
+            this.Controls.Add(this.lblArmRight);
+            this.Controls.Add(this.lblBody);
             this.Controls.Add(this.lblGameOver);
             this.Controls.Add(this.lblWord);
             this.Controls.Add(this.btnBackToMain);
             this.Controls.Add(this.btnCheckChar);
-            this.Controls.Add(this.lblHead);
-            this.Controls.Add(this.lblLegLeft);
-            this.Controls.Add(this.lblLegRight);
-            this.Controls.Add(this.lblArmLeft);
-            this.Controls.Add(this.lblArmRight);
-            this.Controls.Add(this.lblBody);
             this.Controls.Add(this.lblHook);
             this.Controls.Add(this.lblArm);
             this.Controls.Add(this.lblPole);
             this.Controls.Add(this.lblStand);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblLegRight);
+            this.Controls.Add(this.lblLegLeft);
             this.Name = "frmHang";
             this.Text = "Hang";
             this.Load += new System.EventHandler(this.frmHang_Load);
@@ -231,5 +243,6 @@
         private System.Windows.Forms.Button btnBackToMain;
         private System.Windows.Forms.Label lblWord;
         private System.Windows.Forms.Label lblGameOver;
+        private System.Windows.Forms.Label label1;
     }
 }
