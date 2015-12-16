@@ -31,9 +31,18 @@ namespace MainMenu
 
         private void btnCheckChar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                userAnswer = Convert.ToChar(textBox1.Text);
+                checkForChar();
+                textBox1.Text = "";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please enter a letter.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
-            userAnswer = Convert.ToChar(textBox1.Text);          
-            checkForChar();
+                
         }
 
         #region "Check Character Match"
@@ -56,6 +65,7 @@ namespace MainMenu
 
             if (foundMatch == false)
             {
+                label1.Text += " " + userAnswer;
                 switch (strikes)
                 {
                     case 1: lblStand.Visible = true; ++strikes;
