@@ -86,7 +86,7 @@ namespace MainMenu
                         break;
                     case 9: lblLegLeft.Visible = true; ++strikes;
                         break;
-                    case 10: lblLegRight.Visible = true; ++strikes; textBox1.Enabled = false; btnCheckChar.Enabled = false; lblGameOver.Text = "Game Over"; textBox1.Text = word;
+                    case 10: lblLegRight.Visible = true; ++strikes; textBox1.Enabled = false; btnCheckChar.Enabled = false; lblGameOver.Text = "Game Over!"; lblWord.Text = word;
                         break;
                     default: break;
 

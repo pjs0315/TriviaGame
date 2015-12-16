@@ -173,7 +173,7 @@
             // 
             this.lblWord.AutoSize = true;
             this.lblWord.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWord.Location = new System.Drawing.Point(18, 100);
+            this.lblWord.Location = new System.Drawing.Point(12, 96);
             this.lblWord.Name = "lblWord";
             this.lblWord.Size = new System.Drawing.Size(2, 15);
             this.lblWord.TabIndex = 14;
