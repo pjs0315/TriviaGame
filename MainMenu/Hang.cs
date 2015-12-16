@@ -115,7 +115,7 @@ namespace MainMenu
             charArray = new char[word.Length];
             for (int i = 0; i < word.Length; ++i)
             {
-                charArray[i] = '_';
+                charArray[i] = '*';
             }
 
             string s = new string(charArray);

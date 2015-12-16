@@ -17,4 +17,3 @@ C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\obj\Debug\MainMenu.TicTac.reso
 C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\obj\Debug\MainMenu.csproj.GenerateResource.Cache
 C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\obj\Debug\MainMenu.exe
 C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\obj\Debug\MainMenu.pdb
-C:\Users\Ani\Documents\GitHub\TriviaGame\MainMenu\obj\Debug\MainMenu.csprojResolveAssemblyReference.cache

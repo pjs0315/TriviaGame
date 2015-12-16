@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.IO;
+using System.Threading;
 
 namespace MainMenu
 {
@@ -40,11 +41,37 @@ namespace MainMenu
 
         #region "Button Click for All Buttons"
 
+        int[] ids = new int[2] { 0, 0 };
+        int numClick = 0;
+        mButton prev;
+        mButton curr;
+        int winCounter = 10;
+       
         private void ButtonClick(object sender, EventArgs e)
         {
-            mButton clickedButton = (mButton)sender;
-            clickedButton.isFlipped = true;
+            mButton clickedButton = sender as mButton;
             clickedButton.Text = clickedButton.gameText;
+            ++numClick;
+            
+            switch (numClick)
+            {
+                case 1: ids[0] = clickedButton.ID;
+                    prev = clickedButton;
+                    break;
+                case 2:
+                    ids[1] = clickedButton.ID;
+                    curr = clickedButton;
+
+                    if (ids[0] == ids[1])//match found
+                    { prev.Enabled = false; clickedButton.Enabled = false; --winCounter; }
+                    else
+                    { timer1.Start();} //no match found
+
+                    numClick = 0;
+                    break;
+            }
+            if (winCounter == 0)
+            { label1.Text = "You found all the matches!"; }
         }
         #endregion
 
@@ -96,19 +123,6 @@ namespace MainMenu
             }
             arrayCounter = 0; //resetting arrayCounter
 
-            //adding all buttons to a single event handler called ButtonClick
-            int buttonCounter = 0;
-            foreach (Control c in this.Controls)
-            {
-                if (c is mButton)
-                {
-                    c.Click += ButtonClick;
-                    ++buttonCounter;
-                
-                }
-                
-            }
-
             for (int i = 1; i < 21; ++i)
             {
                 string name = "mButton" + i;
@@ -132,5 +146,13 @@ namespace MainMenu
             this.Close();
         }
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            prev.Text = ""; curr.Text = "";
+            
+           
+        }
     }
 }
