@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnQuitToMain = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.mButton11 = new MainMenu.mButton();
             this.mButton12 = new MainMenu.mButton();
             this.mButton13 = new MainMenu.mButton();
@@ -50,7 +52,6 @@
             this.mButton4 = new MainMenu.mButton();
             this.mButton2 = new MainMenu.mButton();
             this.mButton1 = new MainMenu.mButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnQuitToMain
@@ -63,14 +64,19 @@
             this.btnQuitToMain.UseVisualStyleBackColor = true;
             this.btnQuitToMain.Click += new System.EventHandler(this.btnQuitToMain_Click);
             // 
-            // textBox1
+            // timer1
             // 
-            this.textBox1.Location = new System.Drawing.Point(576, 135);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(296, 251);
-            this.textBox1.TabIndex = 42;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(576, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 49);
+            this.label1.TabIndex = 44;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mButton11
             // 
@@ -332,23 +338,13 @@
             this.mButton1.UseVisualStyleBackColor = false;
             this.mButton1.Click += new System.EventHandler(this.ButtonClick);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(612, 39);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox2.Size = new System.Drawing.Size(260, 45);
-            this.textBox2.TabIndex = 43;
-            // 
             // MemoryTrivia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(884, 430);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.mButton11);
             this.Controls.Add(this.mButton12);
             this.Controls.Add(this.mButton13);
@@ -374,7 +370,6 @@
             this.Text = "MemoryTrivia";
             this.Load += new System.EventHandler(this.MemoryTrivia_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -401,7 +396,7 @@
         private mButton mButton18;
         private mButton mButton19;
         private mButton mButton20;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
